@@ -1,0 +1,111 @@
+.right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: yellowgreen; */
+    width: 75%;
+    /* border: .1vh solid red; */
+}
+
+form {
+    /* border: 1px red solid; */
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    width: 100%;
+    /* margin-left: 10px; */
+    /* padding-left: 10px; */
+    padding-bottom: 18vh;
+}
+
+
+
+.row {
+    /* border: 1px black solid; */
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 5vh;
+
+}
+
+.col {
+    /* border: 1px red solid; */
+    display: flex;
+    flex-direction: column;
+    padding-left: 5.5vh;
+    padding-bottom: 2.5vh;
+
+}
+
+.col label {
+    pointer-events: none;
+    position: absolute;
+    transition: .5s;
+}
+
+/* animation */
+.col input:valid~label,
+.col input:focus~label {
+    transform: translateY(-3.5vh);
+    letter-spacing: .1vh;
+    background: rgb(255, 217, 0);
+    padding: .25vh 1vh;
+    font-weight: 3.5vh;
+    /* font-size: 2vh; */
+}
+
+input {
+    padding-top: 1vh;
+    width: 45vh;
+}
+
+
+
+.text {
+    font-size: 3vh;
+    padding: 5vh;
+}
+
+.row button {
+    width: 20vh;
+}
+
+/* ANIMATION */
+
+.col input {
+    background: white;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.908);
+    outline: none;
+}
+
+button {
+    position: relative;
+    padding: 2vh;
+    background-color: rgb(255, 217, 0);
+    border: none;
+    font-size: 2.5vh;
+    cursor: pointer;
+    transition: ease-in .2s;
+}
+
+button:hover {
+    color: rgb(255, 217, 0);
+    background-color: black;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    /* background-color: black;
+    padding: .25vh 1vh; */
+    transition: ease-in .15s;
+}
+
+a:hover {
+    color: rgb(255, 217, 0);
+    /* background-color: rgb(255, 217, 0); */
+}
